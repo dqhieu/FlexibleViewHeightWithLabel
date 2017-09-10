@@ -12,6 +12,8 @@
 		712214611F652C70000C97DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7122145F1F652C70000C97DB /* Main.storyboard */; };
 		712214631F652C70000C97DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712214621F652C70000C97DB /* Assets.xcassets */; };
 		712214661F652C70000C97DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712214641F652C70000C97DB /* LaunchScreen.storyboard */; };
+		7122146E1F652C7C000C97DB /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122146D1F652C7C000C97DB /* MyView.swift */; };
+		7728F47D151AB41293A38843 /* Pods_FlexibleViewHeightWithLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDBC736FD95C31EBFB8D7CB /* Pods_FlexibleViewHeightWithLabel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		712214621F652C70000C97DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		712214651F652C70000C97DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		712214671F652C70000C97DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7122146D1F652C7C000C97DB /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		7EDBC736FD95C31EBFB8D7CB /* Pods_FlexibleViewHeightWithLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexibleViewHeightWithLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB763BC77CC85EC3051044E /* Pods-FlexibleViewHeightWithLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexibleViewHeightWithLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlexibleViewHeightWithLabel/Pods-FlexibleViewHeightWithLabel.debug.xcconfig"; sourceTree = "<group>"; };
+		D67EB9AA182C6493B4F93ABE /* Pods-FlexibleViewHeightWithLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexibleViewHeightWithLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexibleViewHeightWithLabel/Pods-FlexibleViewHeightWithLabel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7728F47D151AB41293A38843 /* Pods_FlexibleViewHeightWithLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				7122145A1F652C70000C97DB /* FlexibleViewHeightWithLabel */,
 				712214591F652C70000C97DB /* Products */,
+				D8C0AA3823B2C4570FBE7B3C /* Pods */,
+				A20E462D2A833C26D6D5764D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,30 @@
 			children = (
 				7122145B1F652C70000C97DB /* AppDelegate.swift */,
 				7122145D1F652C70000C97DB /* ViewController.swift */,
+				7122146D1F652C7C000C97DB /* MyView.swift */,
 				7122145F1F652C70000C97DB /* Main.storyboard */,
 				712214621F652C70000C97DB /* Assets.xcassets */,
 				712214641F652C70000C97DB /* LaunchScreen.storyboard */,
 				712214671F652C70000C97DB /* Info.plist */,
 			);
 			path = FlexibleViewHeightWithLabel;
+			sourceTree = "<group>";
+		};
+		A20E462D2A833C26D6D5764D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EDBC736FD95C31EBFB8D7CB /* Pods_FlexibleViewHeightWithLabel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8C0AA3823B2C4570FBE7B3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FB763BC77CC85EC3051044E /* Pods-FlexibleViewHeightWithLabel.debug.xcconfig */,
+				D67EB9AA182C6493B4F93ABE /* Pods-FlexibleViewHeightWithLabel.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7122146A1F652C70000C97DB /* Build configuration list for PBXNativeTarget "FlexibleViewHeightWithLabel" */;
 			buildPhases = (
+				20DB134A6E26C480E8FA9970 /* [CP] Check Pods Manifest.lock */,
 				712214541F652C70000C97DB /* Sources */,
 				712214551F652C70000C97DB /* Frameworks */,
 				712214561F652C70000C97DB /* Resources */,
+				43D6F2D444E3A96B9563A358 /* [CP] Embed Pods Frameworks */,
+				BAB447DD4FDAF02445F72487 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +161,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20DB134A6E26C480E8FA9970 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlexibleViewHeightWithLabel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43D6F2D444E3A96B9563A358 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlexibleViewHeightWithLabel/Pods-FlexibleViewHeightWithLabel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlexibleViewHeightWithLabel/Pods-FlexibleViewHeightWithLabel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB447DD4FDAF02445F72487 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlexibleViewHeightWithLabel/Pods-FlexibleViewHeightWithLabel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		712214541F652C70000C97DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7122146E1F652C7C000C97DB /* MyView.swift in Sources */,
 				7122145E1F652C70000C97DB /* ViewController.swift in Sources */,
 				7122145C1F652C70000C97DB /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +357,7 @@
 		};
 		7122146B1F652C70000C97DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB763BC77CC85EC3051044E /* Pods-FlexibleViewHeightWithLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -280,13 +366,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dqhieu.FlexibleViewHeightWithLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		7122146C1F652C70000C97DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67EB9AA182C6493B4F93ABE /* Pods-FlexibleViewHeightWithLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,7 +382,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dqhieu.FlexibleViewHeightWithLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

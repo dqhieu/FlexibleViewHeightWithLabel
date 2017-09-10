@@ -1,0 +1,6 @@
+framework module Pods_FlexibleViewHeightWithLabel {
+  umbrella header "Pods-FlexibleViewHeightWithLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

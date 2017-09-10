@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
+    func setupComponents() {
+        let myView = MyView(title: "Lorem Ipsum is simply dummy text of the printing", subTitle: "Lorem Ipsum is simply dummy text of the printing", content: "Lorem Ipsum is simply dummy text of the printing")
+        self.view.addSubview(myView)
+        
+        myView.snp.makeConstraints { (make) in
+            make.width.equalToSuperview().multipliedBy(0.5)
+            make.centerX.centerY.equalToSuperview()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupComponents()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
