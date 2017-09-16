@@ -81,23 +81,6 @@ class MyView: UIView {
         _titleLabel.text = title
         _subTitleLabel.text = subTitle
         _contentLabel.text = content
-
-        updateFrame()
-    }
-
-    private func updateFrame() {
-        let titleLabelSize = _titleLabel.sizeThatFits(CGSize(width: _titleLabel.frame.width, height: 9999))
-        _titleLabel.frame = CGRect(origin: .zero, size: titleLabelSize)
-
-        let subTitleLabelSize = _subTitleLabel.sizeThatFits(CGSize(width: _subTitleLabel.frame.width, height: 9999))
-        _subTitleLabel.frame = CGRect(origin: .zero, size: subTitleLabelSize)
-
-        let contentLabelSize = _contentLabel.sizeThatFits(CGSize(width: _contentLabel.frame.width, height: 9999))
-        _contentLabel.frame = CGRect(origin: .zero, size: contentLabelSize)
-
-        let frameWidth: CGFloat = self.frame.width
-        let frameHeight: CGFloat = _titleLabel.frame.height + _subTitleLabel.frame.height + _contentLabel.frame.height
-        self.frame = CGRect(origin: self.frame.origin, size: CGSize(width: frameWidth, height: frameHeight))
     }
 
     required init?(coder aDecoder: NSCoder) {
